@@ -1,0 +1,33 @@
+# Lets not upload any data or figures, only scripts, configs and notebooks.
+
+
+# 1. Ignore EVERYTHING
+/*
+
+# 2. Allow Git to look inside all directories (CRITICAL)
+# !*/
+
+#2.1 Allow Git to look inside only these directories and their subdirectories
+!Xenium/analysis/
+!LA-ICP-MS/analysis/
+
+# 2.2 but not these directories
+#*
+
+# 3. Un-ignore specific file types
+!*.py
+!*.ipynb
+!*.R
+!*.qmd
+!*.md
+!*.html
+!*.sh
+!*.yaml
+!*.csv
+
+# 4. Always un-ignore the config files, .gitignore, and README.md
+!.gitignore
+!README.md
+
+# 5. Ignore specific files (data, figures, etc.)
+report.html
